@@ -11,9 +11,6 @@ class Figure:
             self.__sides = list(sides * self.sides_count)
         else:
             self.__sides = list([1] * self.sides_count)
-        # self.__sides = list(sides * self.sides_count)
-        # if len(self.__sides) != self.sides_count:
-        #    self.__sides = list([1] * self.sides_count)
 
     def info(self):
         print(f'Name: {self.name}, color: {self.__color}, sides: {self.__sides}')
