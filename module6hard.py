@@ -19,9 +19,8 @@ class Figure:
         return self.__color
 
     def __is_valid_color(self, r, g, b):
-        self.r, self.g, self.b = r, g, b
-        if isinstance(self.r, int) and isinstance(self.g, int) and isinstance(self.b, int):
-            if 0 <= self.r <= 255 and 0 <= self.g <= 255 and 0 <= self.b <= 255:
+        if isinstance(r, int) and isinstance(g, int) and isinstance(b, int):
+            if 0 <= r <= 255 and 0 <= g <= 255 and 0 <= b <= 255:
                 return True
             else:
                 return False
